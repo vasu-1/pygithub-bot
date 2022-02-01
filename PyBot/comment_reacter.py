@@ -14,7 +14,7 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     url = event.data['comment']['url']
 
 
-    # message = 1
+    message = "heart"
     await gh.post(url['reactions'], data={
-        'heart' : 1,
+        'content': message,
         })
