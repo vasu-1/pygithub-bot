@@ -22,7 +22,7 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     repo_owner = event.data['repository']['owner']['login']
 
     #finding author of the comment
-    author = event.data['issue']['user']['login']
+    author = event.data['comment']['user']['login']
 
 
     if(author != repo_owner) :
@@ -49,7 +49,7 @@ async def issue__comment_edit_event(event, gh, *args, **kwargs):
     repo_owner = event.data['repository']['owner']['login']
 
     #finding author of the comment
-    author = event.data['issue']['user']['login']
+    author = event.data['comment']['user']['login']
 
 
     if(author != repo_owner) :
