@@ -11,7 +11,7 @@ router = routing.Router()
 async def issue_opened_event(event, gh, *args, **kwargs):
 
     #url for the comment url
-    ur = event.data['pull_request']['comments_url']
+    url = event.data['pull_request']['comments_url']
     
     #author of the issue creater
     author = event.data['pull_request']['user']['login']
