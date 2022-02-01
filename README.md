@@ -3,7 +3,6 @@
 ### A Python Bot For Github Automation(Deployed on heroku)
 
 
-
 ## What the bot does ? :-
 
 - Bot will `greet` to the user whenever he/she create an issue.
