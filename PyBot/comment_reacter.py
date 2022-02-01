@@ -25,7 +25,7 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     author = event.data['issue']['user']['login']
 
 
-    if(url != repo_owner) :
+    if(author != repo_owner) :
 
         #reaction for the create issue comment
         message = 'heart'
@@ -52,7 +52,7 @@ async def issue__comment_edit_event(event, gh, *args, **kwargs):
     author = event.data['issue']['user']['login']
 
 
-    if(url != repo_owner) :
+    if(author != repo_owner) :
 
         #reaction for the edit issue comment
         message = 'eyes'
