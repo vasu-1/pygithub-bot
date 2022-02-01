@@ -9,6 +9,9 @@ router = routing.Router()
 # https://stackoverflow.com/questions/64112300/how-can-i-get-the-list-of-github-webhook-events
 
 
+# This thing we can't do IRL but this can be a fun exercise !! for the building the bots !!
+
+
 # issue comment reacter will also work for pull request so we don't need to do other stuff for that
 
 
