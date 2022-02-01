@@ -11,10 +11,10 @@ router = routing.Router()
 
 @router.register("issue_comment", action="created")
 async def issue__comment_create_event(event, gh, *args, **kwargs):
-    url = event.data['issue_comment']['comment']['url']
+    url = event.data['comment']['url']
 
 
     # message = 1
     await gh.post(url['reactions'], data={
-        'content' : 'heart',
+        'heart' : 1,
         })
