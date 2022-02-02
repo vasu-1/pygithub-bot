@@ -18,6 +18,9 @@ async def issue_opened_event(event, gh, *args, **kwargs):
 
     # avatar = event.data['issue']['user']['avatar_url']
 
+    #sender of that event means who is altering the things
+    sender = event.data['sender']['login']
+
     #finding owner to not react on that comment
     repo_owner = event.data['repository']['owner']['login']
 
@@ -39,7 +42,7 @@ async def issue_opened_event(event, gh, *args, **kwargs):
     else:
         #if pr chech is false means it is not merged but only closed
         #it will only greet whenever pr closed by a user
-        if(repo_owner != author):
+        if(repo_owner != sender):
             await gh.post(url, data={
             'body': message_c,
             })
