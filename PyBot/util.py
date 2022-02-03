@@ -127,3 +127,21 @@
 #     if prs_for_commit["total_count"] > 0:  # there should only be one
 #         return prs_for_commit["items"][0]
 #     return None
+
+
+# url = "https://api.github.com/repos/vasu-1/pygithub-bot/issues/46"
+# main_url = url + "/assignees"
+# print(main_url)
+
+# import json
+
+# x =  '{ "name":"John", "age":30, "city":"New York"}'
+# y = json.loads(x)
+
+# s = ["hello","jello"]
+# s = ["mekko"]
+# s=[]
+# s=["fddg"]
+# print(s)
+
+# print(y["age"]) 

@@ -16,7 +16,8 @@ router = routing.Router()
 async def issue__comment_create_event(event, gh, *args, **kwargs):
 
     #url for the comment reaction api
-    url = event.data['comment']['assignees_url']
+    url = event.data['issue']['url']
+    main_url = url + "/assignees"
 
     #comment url
     url_comment = event.data['comment']['comments_url']
@@ -38,7 +39,9 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
 
     if(comment_body == '/assign') :
         if(assinee == null) :
-            await gh.post(url, data=[author])
+            await gh.post(main_url, data={
+                'assignees' : [author],
+            })
 
         else :
             await gh.post(url_comment, data={
