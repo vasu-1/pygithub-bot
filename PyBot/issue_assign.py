@@ -38,12 +38,11 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     message = "We cannot assign this issue to you as it already assigned to someone ! Thanks !";
 
     if(comment_body == '/assign') :
-        if(assinee == null) :
-            await gh.post(main_url, data={
-                'assignees' : [author],
-            })
-
-        else :
+        if(assinee) :
             await gh.post(url_comment, data={
                 'body': message,
+            })
+        else :
+            await gh.post(main_url, data={
+                'assignees' : [author],
             })
