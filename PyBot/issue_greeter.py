@@ -1,4 +1,4 @@
-sfrom gidgethub import routing, sansio
+from gidgethub import routing, sansio
 from gidgethub import aiohttp as gh_aiohttp
 
 
