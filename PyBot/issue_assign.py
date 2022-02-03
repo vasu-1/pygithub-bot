@@ -20,7 +20,7 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     main_url = url + "/assignees"
 
     #comment url
-    url_comment = event.data['comment']['url']
+    url_comment = event.data['issue']['comments_url']
 
     #assignee check
     assinee = event.data['issue']['assignee']
