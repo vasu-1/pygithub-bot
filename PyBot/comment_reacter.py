@@ -15,31 +15,31 @@ router = routing.Router()
 # issue comment reacter will also work for pull request so we don't need to do other stuff for that
 
 
-# @router.register("issue_comment", action="created")
-# async def issue__comment_create_event(event, gh, *args, **kwargs):
+@router.register("issue_comment", action="created")
+async def issue__comment_create_event(event, gh, *args, **kwargs):
 
-#     #url for the comment reaction api
-#     url = event.data['comment']['reactions']['url']
+    #url for the comment reaction api
+    url = event.data['comment']['reactions']['url']
 
-#     #finding owner to not react on that comment
-#     repo_owner = event.data['repository']['owner']['login']
+    #finding owner to not react on that comment
+    repo_owner = event.data['repository']['owner']['login']
 
-#     #finding author of the comment
-#     author = event.data['comment']['user']['login']
+    #finding author of the comment
+    author = event.data['comment']['user']['login']
 
 
-#     if(author != repo_owner) :
+    if(author != repo_owner) :
 
-#         #reaction for the create issue comment
-#         message = 'heart'
+        #reaction for the create issue comment
+        message = 'heart'
 
-#         await gh.post(url, data={
-#             'content': message,
-#         })
+        await gh.post(url, data={
+            'content': message,
+        })
 
-#         # await gh.post(url, data={
-#         #     'heart': 1,
-#         # })
+        # await gh.post(url, data={
+        #     'heart': 1,
+        # })
 
 
 @router.register("issue_comment", action="edited")
