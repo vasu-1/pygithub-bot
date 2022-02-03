@@ -13,4 +13,7 @@ LABEL = 'review_needed' # label name
 async def issue_opened_event(event, gh, *args, **kwargs):
     label = event.data['issue']['labels_url']
 
-    await gh.post(label, data=[LABEL]) #event post for key label
+    await gh.post(label, data={
+        'name' : 'review_needed_test',
+        'color' : '#f52222',
+    }) #event post for key label
