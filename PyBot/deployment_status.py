@@ -11,7 +11,9 @@ async def workflow_job(event, gh, *arg, **kwargs):
 
 	status = event.data['workflow_run']['conclusion']
 	# ur = event.data['pull_request']['comments_url']
-	link = event.data['workflow_run']['repository']['issue_comment_url']
+	link = event.data['workflow_run']['head_commit']['author']['email']
+
+# workflow_run head_commit author email|name
 
 	if(status == "success"):
 		messag = f"succeed"
