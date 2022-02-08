@@ -42,7 +42,7 @@ async def issue_opened_event(event, gh, *args, **kwargs):
     else:
         #if pr chech is false means it is not merged but only closed
         #it will only greet whenever pr closed by a user
-        if(repo_owner != sender):cd
+        if(repo_owner != sender):
             await gh.post(url, data={
             'body': message_c,
             })
