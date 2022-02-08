@@ -13,11 +13,11 @@ async def opened_pr(event, gh, *arg, **kwargs):
     # ur = event.data['pull_request']['comments_url']
 
     if(status == "success") :
-	    messag = f"succed"
+	    messag = f"succeed"
 	    await gh.post(link, data={
 	        'body': messag,
 	        })
-	else if(status == "failure") :
+	elif(status == "failure") :
 		messag = f"Failure"
 	    await gh.post(link, data={
 	        'body': messag,
