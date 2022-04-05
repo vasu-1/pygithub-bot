@@ -27,7 +27,7 @@
 
 ### Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vasu-1/PyBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vasu-1/pygithub-bot)
 
 - Create a Heroku project
 - Set the `GH_TOKEN` environment variable to the GitHub oauth token to be used by the bot
