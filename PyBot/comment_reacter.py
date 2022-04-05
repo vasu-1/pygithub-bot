@@ -32,6 +32,10 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
 
         #reaction for the create issue comment
         message = 'heart'
+        
+        
+        
+        
 
         await gh.post(url, data={
             'content': message,
