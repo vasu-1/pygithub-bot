@@ -15,8 +15,8 @@
 ### Repo Stats :-
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=for-the-badge&color=blue)](.github/CONTRIBUTING.md)
-[![GitHub issues](https://img.shields.io/github/issues/vasu-1/PyBot?color=green&logo=github&style=for-the-badge)](https://github.com/vasu-1/PyBot/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/vasu-1/PyBot?style=for-the-badge&logo=github)](https://github.com/vasu-1/PyBot/pulls) [![GitHub PRs](https://img.shields.io/github/issues-pr-closed/vasu-1/PyBot?style=for-the-badge&color=critical&logo=github)](https://github.com/vasu-1/PyBot/pulls?q=is%3Apr+is%3Aclosed)
+[![GitHub issues](https://img.shields.io/github/issues/vasu-1/pygithub-bot?color=green&logo=github&style=for-the-badge)](https://github.com/vasu-1/pygithub-bot/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/vasu-1/pygithub-bot?style=for-the-badge&logo=github)](https://github.com/vasu-1/pygithub-bot/pulls) [![GitHub PRs](https://img.shields.io/github/issues-pr-closed/vasu-1/pygithub-bot?style=for-the-badge&color=critical&logo=github)](https://github.com/vasu-1/pygithub-bot/pulls?q=is%3Apr+is%3Aclosed)
 
 
 ### Language Used :-
@@ -39,4 +39,4 @@
 
 ### Project Maintainers :-
 
-[![Contributors List](https://contrib.rocks/image?repo=vasu-1/PyBot)](https://github.com/vasu-1/PyBot/graphs/contributors)
+[![Contributors List](https://contrib.rocks/image?repo=vasu-1/pygithub-bot)](https://github.com/vasu-1/pygithub-bot/graphs/contributors)
